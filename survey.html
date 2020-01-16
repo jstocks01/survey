@@ -10,48 +10,50 @@
   <script src="js/scripts.js"></script>
   <title>Survey</title>
 </head>
-<H1>Personal Survey:</H1>
+<H1 class="jumbotron">Personal Survey:</H1>
 <body>
-  <p>Please select in the information that best fits you:</p>
-  <select class="form-control" id="gender">
-    <option>Male</option>
-    <option>Female</option>
-    <option>Non-binary</option>
-  </select>
+  <div class="container">
+    <p>Please select in the information that best fits you:</p>
+    <select class="form-control" id="gender">
+      <option>Male</option>
+      <option>Female</option>
+      <option>Non-binary</option>
+    </select>
 
 
-  <h3>Are you currently serving?</h3>
-  <div class="radio">
-    <label>
-      <input type="radio" name="service" value="Yes" checked>
-      Yes
-    </label>
-  </div>
-  <div class="radio">
+    <h3>Are you currently serving?</h3>
+    <div class="radio">
       <label>
-        <input type="radio" name="service" value="No">
-        No
+        <input type="radio" name="service" value="Yes" checked>
+        Yes
       </label>
     </div>
     <div class="radio">
         <label>
-          <input type="radio" name="service" value="Dishonorably-Discharged">
-          Dishonorably Discharged
+          <input type="radio" name="service" value="No">
+          No
         </label>
-    </div>
-    <br>
-    <div class="form-group">
-      <label for="born">Date of birth:</label>
-      <input id="born" class="form-control" type="date">
-    </div>
-
-    <div class="form-group">
-        <label for="color">What is your favorite color?</label>
-        <input id="color" class="form-control" type="color">
       </div>
-      <div id="target">
-          Click here
+      <div class="radio">
+          <label>
+            <input type="radio" name="service" value="Dishonorably-Discharged">
+            Dishonorably Discharged
+          </label>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="born">Date of birth:</label>
+        <input id="born" class="form-control" type="date">
+      </div>
+
+      <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
         </div>
+        <div id="target">
+            Click here
+          </div>
+    </div>
   
 </body>
 </html>
